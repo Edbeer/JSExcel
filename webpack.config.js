@@ -28,7 +28,7 @@ const jsLoaders = () => {
 }
 
 module.exports = {
-    target: process.env.NODE_ENV === "development" ? "web" : "browserslist", //vaznoe govno! https://qna.habr.com/q/876987
+    target: process.env.NODE_ENV === "development" ? "web" : "browserslist",
     context: path.resolve(__dirname, 'src'),
     mode: 'development',
     entry: ['@babel/polyfill', './index.js'],
